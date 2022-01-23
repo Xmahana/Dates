@@ -53,9 +53,12 @@ public class Fecha {
     //Output
 
     switch(result){
-        case 0: JOptionPane.showMessageDialog(null, "Both dates are equal"); break;
-        case 1: JOptionPane.showMessageDialog(null, "The first date is higher"); break;
-        case 2: JOptionPane.showMessageDialog(null, "The second date is higher"); break;
+        case 0: JOptionPane.showMessageDialog(null, "Both dates are equal"); 
+        System.out.println("Both dates are equal"); break;
+        case 1: JOptionPane.showMessageDialog(null, "The first date is higher"); 
+        System.out.println("The first date is higher"); break;
+        case 2: JOptionPane.showMessageDialog(null, "The second date is higher"); 
+        System.out.println("The second date is higher"); break;
     }
     }
 }
