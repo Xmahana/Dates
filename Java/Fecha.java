@@ -1,10 +1,4 @@
-import javax.print.event.PrintJobListener;
-import javax.sound.midi.Soundbank;
-import javax.sound.sampled.SourceDataLine;
 import javax.swing.JOptionPane;
-
-import javafx.print.PrintColor;
-
 
 public class Fecha {
     public static void main(String[] args){
