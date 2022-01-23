@@ -53,6 +53,8 @@ public class Fecha {
         System.out.println("The first date is higher"); break;
         case 2: JOptionPane.showMessageDialog(null, "The second date is higher"); 
         System.out.println("The second date is higher"); break;
+        default: JOptionPane.showMessageDialog(null, "An error has ocurred"); 
+        System.out.println("Error");
     }
     }
 }
