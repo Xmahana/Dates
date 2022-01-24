@@ -1,2 +1,4 @@
 # Dates
-School homework
+School homework 
+UADY
+Autor: José Angel Magaña García
