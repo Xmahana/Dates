@@ -27,23 +27,23 @@ scanf("%i", &day_2);
 printf("\n%i/%i/%i\n", day_2, month_2, year_2);
 
 
-if(year_1 > year_2){
-        result = 1;     
+if(year_1 == year_2){
+        result = 0;     
 }else{
-    if(year_1 < year_2){
-        result = 2;     
+    if(year_1 > year_2){
+        result = 1;     
     }else{
-        if(month_1 > month_2){
-            result = 1;     
+        if(month_1 == month_2){
+            result = 0;     
         }else{
-            if(month_1 < month_2){
-                result = 2;
+            if(month_1 > month_2){
+                result = 1;
             }else{
-                if(day_1 > day_2){
-                    result = 1;
+                if(day_1 == day_2){
+                    result = 0;
                 }else{
-                    if(day_1 < day_2){
-                        result = 2;
+                    if(day_1 > day_2){
+                        result = 1;
                     }
                 }
             }
@@ -54,11 +54,12 @@ if(year_1 > year_2){
 
 
 //Output
-printf("\n");    
+printf("\n");
 switch(result){
         case 0: printf("Both dates are equal"); break;
         case 1: printf("The first date is higher"); break;
         case 2: printf("The second date is higher"); break;
         default: printf("An error has ocurred");
     }
+
 }
