@@ -5,7 +5,7 @@ public class Fecha {
     
     //Variables
     int year_1, year_2, month_1, month_2, day_1, day_2;
-    int result = 0 ;
+    int result = 0;
 
     //Process
     year_1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insert the year of the first date"));
@@ -22,17 +22,17 @@ public class Fecha {
     if(year_1 > year_2){
         result = 1;    
     }else{
-        if(month_1 > month_2){
-            result = 1;
+        if(year_1 < year_2){
+            result = 2;
         }else{
-            if(day_1 > day_2){
+            if(month_1 > month_2){
                 result = 1;
             }else{
-                if(year_1 < year_2){
+                if(month_1 < month_2){
                     result = 2;    
                 }else{
-                    if(month_1 < month_2){
-                        result = 2;
+                    if(day_1 > day_2){
+                        result = 1;
                     }else{
                         if(day_1 < day_2){
                             result = 2;
@@ -42,7 +42,6 @@ public class Fecha {
             }
         }
     }
-
     
     //Output
 
