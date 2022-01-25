@@ -5,7 +5,7 @@ int main(){
 //Variables
 
 int year_1, month_1, day_1, year_2, month_2, day_2;
-int result = 0;
+int result = 2;
 
 //Process
 
@@ -28,29 +28,26 @@ printf("\n%i/%i/%i\n", day_2, month_2, year_2);
 
 
 if(year_1 == year_2){
-        result = 0;     
+    if(month_1 == month_2){
+        if(day_1 == day_2){
+            result = 0;
+        }else{
+            if(day_1 > day_2){
+                result = 1;
+            }
+        }
+    }else{
+        if(month_1 > month_2){
+            result = 1;
+        }
+    } 
 }else{
     if(year_1 > year_2){
-        result = 1;     
-    }else{
-        if(month_1 == month_2){
-            result = 0;     
-        }else{
-            if(month_1 > month_2){
-                result = 1;
-            }else{
-                if(day_1 == day_2){
-                    result = 0;
-                }else{
-                    if(day_1 > day_2){
-                        result = 1;
-                    }
-                }
-            }
-        }   
-    }   
+    result = 1;
+    }
 }
 
+printf("%i", result);
 
 
 //Output
