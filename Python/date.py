@@ -9,8 +9,6 @@ year_2 = int (input("\nInsert the second year: ")) * 365
 month_2 = int(input("Insert the second month: ")) * 31
 day_2 = int(input("Insert the second day: ")) 
 
-result = year_1 + month_1 + day_1 - year_2 - month_2 - day_2
-
 #Process
 
 result = year_1 + month_1 + day_1 - year_2 - month_2 - day_2
@@ -25,4 +23,3 @@ elif result < 0:
     print("The second date is the higher")
 else:
     print("Error")    
-

@@ -9,7 +9,7 @@ int result = 0;
 
 //Process
 
-printf("\n\nInsert the first year: ");
+printf("Insert the first year: ");
 scanf("%i", &year_1);
 printf("Insert the first month: ");
 scanf("%i", &month_1);

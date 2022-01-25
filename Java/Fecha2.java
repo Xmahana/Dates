@@ -22,17 +22,17 @@ public class Fecha2 {
     if(year_1 < year_2){
         result = 2;    
     }else{
-        if(month_1 < month_2){
-            result = 2;
+        if(year_1 > year_2){
+            result = 1;
         }else{
-            if(day_1 < day_2){
+            if(month_1 < month_2){
                 result = 2;
             }else{
-                if(year_1 > year_2){
+                if(month_1 > month_2){
                     result = 1;    
                 }else{
-                    if(month_1 > month_2){
-                        result = 1;
+                    if(day_1 < day_2){
+                        result = 2;
                     }else{
                         if(day_1 > day_2){
                             result = 1;
